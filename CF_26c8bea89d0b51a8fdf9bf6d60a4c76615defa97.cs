@@ -31,11 +31,16 @@ public class CF_26c8bea89d0b51a8fdf9bf6d60a4c76615defa97
             yield break;
         }
 
-        CF_44b706e36d672b6b10f038838eb6fc93dc8650c6.CF_5e66d4818305611f03e248f8dc63ed32c48104c7 += 1;
+        CF_44b706e36d672b6b10f038838eb6fc93dc8650c6.CF_5e66d4818305611f03e248f8dc63ed32c48104c7 +=
+            cc5b3cf46618a300510b0ad9a330be9b1.c8c48e419720bff4f9ded65e1874e30e6(150529);
 
         string antiCache = c30df3218081f95188442b795df6adb13.c6f4ad10c9304b59afdcc32592176a672(64117) +
-                           CEMisc.Rand(0, 100000).ToString();
-        if (action.IndexOf(c30df3218081f95188442b795df6adb13.c6f4ad10c9304b59afdcc32592176a672(1256)) > -1)
+                           CEMisc.Rand(
+                               cc5b3cf46618a300510b0ad9a330be9b1.c8c48e419720bff4f9ded65e1874e30e6(150533),
+                               cc5b3cf46618a300510b0ad9a330be9b1.c8c48e419720bff4f9ded65e1874e30e6(150537))
+                               .ToString();
+        if (action.IndexOf(c30df3218081f95188442b795df6adb13.c6f4ad10c9304b59afdcc32592176a672(1256)) >
+            cc5b3cf46618a300510b0ad9a330be9b1.c8c48e419720bff4f9ded65e1874e30e6(150541))
         {
             antiCache = c30df3218081f95188442b795df6adb13.c6f4ad10c9304b59afdcc32592176a672(1236) + antiCache;
         }
@@ -79,7 +84,9 @@ public class CF_26c8bea89d0b51a8fdf9bf6d60a4c76615defa97
             action,
             antiCache);
 
-        for (int i = 0; i < retries; i += 1)
+        for (int i = cc5b3cf46618a300510b0ad9a330be9b1.c8c48e419720bff4f9ded65e1874e30e6(150593);
+             i < retries;
+             i += cc5b3cf46618a300510b0ad9a330be9b1.c8c48e419720bff4f9ded65e1874e30e6(150657))
         {
             lastError = null;
             softFail = null;
@@ -92,7 +99,8 @@ public class CF_26c8bea89d0b51a8fdf9bf6d60a4c76615defa97
                 yield return null;
             }
 
-            bool willBreak = true;
+            bool willBreak =
+                cc5b3cf46618a300510b0ad9a330be9b1.c8c48e419720bff4f9ded65e1874e30e6(150601) != 0;
             if (www.error != null)
             {
                 lastError = www.error;
@@ -101,12 +109,20 @@ public class CF_26c8bea89d0b51a8fdf9bf6d60a4c76615defa97
                     action +
                     c30df3218081f95188442b795df6adb13.c6f4ad10c9304b59afdcc32592176a672(64180) +
                     www.error);
-                willBreak = false;
+                willBreak = cc5b3cf46618a300510b0ad9a330be9b1.c8c48e419720bff4f9ded65e1874e30e6(150605) !=
+                            0;
             }
 
-            if (willBreak && www.text.IndexOf(c30df3218081f95188442b795df6adb13.c6f4ad10c9304b59afdcc32592176a672(64199), 0) != -1)
+            if (willBreak &&
+                www.text.IndexOf(
+                    c30df3218081f95188442b795df6adb13.c6f4ad10c9304b59afdcc32592176a672(64199),
+                    cc5b3cf46618a300510b0ad9a330be9b1.c8c48e419720bff4f9ded65e1874e30e6(150609)) !=
+                cc5b3cf46618a300510b0ad9a330be9b1.c8c48e419720bff4f9ded65e1874e30e6(150613))
             {
-                if (www.text.IndexOf(c30df3218081f95188442b795df6adb13.c6f4ad10c9304b59afdcc32592176a672(64214), 0) == -1)
+                if (www.text.IndexOf(
+                        c30df3218081f95188442b795df6adb13.c6f4ad10c9304b59afdcc32592176a672(64214),
+                        cc5b3cf46618a300510b0ad9a330be9b1.c8c48e419720bff4f9ded65e1874e30e6(150617)) ==
+                    cc5b3cf46618a300510b0ad9a330be9b1.c8c48e419720bff4f9ded65e1874e30e6(150621))
                 {
                     lastError = c30df3218081f95188442b795df6adb13.c6f4ad10c9304b59afdcc32592176a672(64231);
                     UnityEngine.Debug.LogWarning(
@@ -114,7 +130,9 @@ public class CF_26c8bea89d0b51a8fdf9bf6d60a4c76615defa97
                         action +
                         c30df3218081f95188442b795df6adb13.c6f4ad10c9304b59afdcc32592176a672(64180) +
                         lastError);
-                    willBreak = false;
+                    willBreak =
+                        cc5b3cf46618a300510b0ad9a330be9b1.c8c48e419720bff4f9ded65e1874e30e6(150625) !=
+                        0;
                 }
             }
 
@@ -127,10 +145,15 @@ public class CF_26c8bea89d0b51a8fdf9bf6d60a4c76615defa97
                 UnityEngine.Debug.Log("[RESPONSE][RESULTS]: " + www.text);
 
                 string searchString = c30df3218081f95188442b795df6adb13.c6f4ad10c9304b59afdcc32592176a672(64293);
-                int startPos = www.text.IndexOf(searchString, 0);
+                int startPos = www.text.IndexOf(
+                    searchString,
+                    cc5b3cf46618a300510b0ad9a330be9b1.c8c48e419720bff4f9ded65e1874e30e6(150629));
                 string responseHashString = www.text.Substring(
                     startPos + searchString.Length,
-                    www.text.Length - 2 - startPos - searchString.Length);
+                    www.text.Length -
+                    cc5b3cf46618a300510b0ad9a330be9b1.c8c48e419720bff4f9ded65e1874e30e6(150633) -
+                    startPos -
+                    searchString.Length);
                 responseHashString = CF_cc5c171019b3fbb8c50a0900ac1a7900fb9f1267.CF_a0ec4a3dd83c68475df0ec7973cbe1a272f3ed39(
                     responseHashString,
                     c30df3218081f95188442b795df6adb13.c6f4ad10c9304b59afdcc32592176a672(19244));
@@ -146,7 +169,9 @@ public class CF_26c8bea89d0b51a8fdf9bf6d60a4c76615defa97
                         action +
                         c30df3218081f95188442b795df6adb13.c6f4ad10c9304b59afdcc32592176a672(64180) +
                         lastError);
-                    willBreak = false;
+                    willBreak =
+                        cc5b3cf46618a300510b0ad9a330be9b1.c8c48e419720bff4f9ded65e1874e30e6(150637) !=
+                        0;
                 }
             }
 
@@ -159,7 +184,9 @@ public class CF_26c8bea89d0b51a8fdf9bf6d60a4c76615defa97
                     action +
                     c30df3218081f95188442b795df6adb13.c6f4ad10c9304b59afdcc32592176a672(64180) +
                     lastError);
-                willBreak = false;
+                willBreak =
+                    cc5b3cf46618a300510b0ad9a330be9b1.c8c48e419720bff4f9ded65e1874e30e6(150641) !=
+                    0;
             }
 
             if (willBreak && results.ContainsKey(c30df3218081f95188442b795df6adb13.c6f4ad10c9304b59afdcc32592176a672(64446)))
@@ -170,7 +197,9 @@ public class CF_26c8bea89d0b51a8fdf9bf6d60a4c76615defa97
                     action +
                     c30df3218081f95188442b795df6adb13.c6f4ad10c9304b59afdcc32592176a672(64180) +
                     hardFail);
-                willBreak = false;
+                willBreak =
+                    cc5b3cf46618a300510b0ad9a330be9b1.c8c48e419720bff4f9ded65e1874e30e6(150645) !=
+                    0;
             }
 
             if (willBreak)
@@ -201,10 +230,12 @@ public class CF_26c8bea89d0b51a8fdf9bf6d60a4c76615defa97
                 c30df3218081f95188442b795df6adb13.c6f4ad10c9304b59afdcc32592176a672(64147) +
                 action +
                 c30df3218081f95188442b795df6adb13.c6f4ad10c9304b59afdcc32592176a672(64530) +
-                (i + 1));
+                (i + cc5b3cf46618a300510b0ad9a330be9b1.c8c48e419720bff4f9ded65e1874e30e6(150653))
+                    .ToString());
         }
 
-        CF_44b706e36d672b6b10f038838eb6fc93dc8650c6.CF_5e66d4818305611f03e248f8dc63ed32c48104c7 -= 1;
+        CF_44b706e36d672b6b10f038838eb6fc93dc8650c6.CF_5e66d4818305611f03e248f8dc63ed32c48104c7 -=
+            cc5b3cf46618a300510b0ad9a330be9b1.c8c48e419720bff4f9ded65e1874e30e6(150661);
     }
 
     private static string BuildHashString(Dictionary<string, object> postVars)
